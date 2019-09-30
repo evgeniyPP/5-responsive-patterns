@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>5 самых популярных паттернов отзывчивого веб-дизайна</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>5 самых популярных паттернов отзывчивого веб-дизайна</h1>
+      <p>
+        Для того, чтобы окончательно для себя закрепить тему responsive дизайна,
+        я решил создать этот небольшой сайт, отображающий 5 наиболее популярных
+        паттернов отзывчивого веб-дизайна.
+      </p>
+      <p>
+        Все паттерны используют в своей основе Flexbox. Если руки дойдут,
+        повторю всё в Grid.
+      </p>
+      <p>
+        За основу взят материал из статьи "Приемы отзывчивого веб-дизайна" от
+        Pete LePage.
+      </p>
+    </header>
+    <main>
+      <article class="pattern">
+        <h2>Mostly Fluid (Наиболее резиновый)</h2>
+        <section class="pattern-section">
+          <img src="./images/mostly-fluid.svg" alt="mostly-fluid" />
+          <p class="pattern-description">
+            Шаблон Mostly fluid состоит главным образом из "резиновой" сетки. На
+            экранах большой или средней ширины ее размер обычно остается
+            неизменным, в то время как на больших экранах регулируются только
+            поля.
+          </p>
+        </section>
+        <a class="pattern-link" href="./patterns/mostly-fluid.html">Посмотреть</a>
+      </article>
+      <article class="pattern">
+        <h2>Column Drop (Столбцы друг под другом)</h2>
+        <section class="pattern-section">
+          <img src="./images/column-drop.svg" alt="column-drop" />
+          <p class="pattern-description">
+            В макетах, состоящих из нескольких столбцов, которые занимают всю
+            ширину экрана, шаблон Column Drop просто размещает столбцы один за
+            одним по вертикали, когда ширина окна становится слишком небольшой
+            для отображения всего контента.
+          </p>
+        </section>
+        <a class="pattern-link" href="./patterns/column-drop.html">Посмотреть</a>
+      </article>
+      <article class="pattern">
+        <h2>Layout shifter (Двигающийся макет)</h2>
+        <section class="pattern-section">
+          <img src="./images/layout-shifter.svg" alt="layout-shifter" />
+          <p class="pattern-description">
+            Шаблон Layout shifter является наиболее отзывчивым, поскольку в нем
+            предусмотрено наличие нескольких контрольных точек для экранов
+            различной ширины. Основным отличием этого макета является то, что
+            вместо перерасчета дерева отрисовки и размещения столбцов друг под
+            другом перемещается контент.
+          </p>
+        </section>
+        <a class="pattern-link" href="./patterns/layout-shifter.html">Посмотреть</a>
+      </article>
+      <article class="pattern">
+        <h2>Tiny Tweaks (Крошечные изменения)</h2>
+        <section class="pattern-section">
+          <img src="./images/tiny-tweaks.svg" alt="tiny-tweaks" />
+          <p class="pattern-description">
+            Шаблон Tiny Tweaks (Крошечные изменения) просто вносит небольшие
+            изменения в макет, например, регулирует размер шрифта, меняет размер
+            изображений или перемещает контент.
+          </p>
+        </section>
+        <a class="pattern-link" href="./patterns/tiny-tweaks.html">Посмотреть</a>
+      </article>
+      <article class="pattern">
+        <h2>Off Canvas (Вне экрана)</h2>
+        <section class="pattern-section">
+          <img src="./images/off-canvas.svg" alt="off-canvas" />
+          <p class="pattern-description">
+            Вместо того чтобы размещать элементы контента вертикально друг под
+            другом, шаблон размещает контент, который используется редко,
+            скажем, элементы навигации или меню приложения за пределами экрана,
+            показывая его только тогда, когда это позволяет сделать размер
+            экрана. На небольших же экранах контент можно открыть одним щелчком.
+          </p>
+        </section>
+        <a class="pattern-link" href="./patterns/off-canvas.html">Посмотреть</a>
+      </article>
+    </main>
+  </body>
+</html>

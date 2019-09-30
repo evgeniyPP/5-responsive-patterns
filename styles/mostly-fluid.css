@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.main,
+.aside {
+  min-height: 60vh;
+}
+
+.add-1,
+.add-2,
+.add-3 {
+  min-height: 40vh;
+}
+
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .aside,
+  .add-1,
+  .add-2,
+  .add-3 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .main {
+    width: 60%;
+  }
+
+  .aside {
+    width: 40%;
+  }
+
+  .add-1,
+  .add-2 {
+    width: 33%;
+  }
+
+  .add-3 {
+    width: 34%;
+  }
+}

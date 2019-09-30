@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.aside {
+  min-height: 100vh;
+}
+
+.add-1 {
+  min-height: 30vh;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    width: 67%;
+    order: -1;
+  }
+
+  .aside {
+    width: 33%;
+    order: -2;
+  }
+}
+
+@media (min-width: 800px) {
+  .main {
+    width: 50%;
+  }
+
+  .aside {
+    width: 25%;
+  }
+
+  .add-1 {
+    width: 25%;
+  }
+}

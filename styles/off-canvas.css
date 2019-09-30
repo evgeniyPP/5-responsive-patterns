@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main,
+.aside {
+  min-height: 100vh;
+}
+
+.add-1 {
+  min-height: 30vh;
+}
+
+.aside {
+  display: none;
+  order: 1;
+}
+
+.main {
+  width: 100%;
+  order: 2;
+}
+
+.add-1 {
+  display: none;
+  order: 3;
+}
+
+@media (min-width: 600px) {
+  .main {
+    width: 50%;
+  }
+
+  .add-1 {
+    display: block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aside {
+    display: block;
+    width: 33%;
+  }
+
+  .main {
+    width: 34%;
+  }
+
+  .add-1 {
+    width: 33%;
+  }
+}

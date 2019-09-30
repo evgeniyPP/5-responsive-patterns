@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aside {
+  min-height: 20vh;
+  order: 1;
+}
+
+.content {
+  order: 2;
+}
+
+.main,
+.add-1 {
+  min-height: 60vh;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .aside {
+    width: 20%;
+  }
+
+  .content {
+    width: 80%;
+  }
+}
